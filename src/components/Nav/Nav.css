@@ -1,0 +1,22 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-group{
+    display: flex;
+    column-gap: 7px;
+}
+
+.btn-1{
+    padding: 5px 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.btn-2{
+    padding: 5px 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}

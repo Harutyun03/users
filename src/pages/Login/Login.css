@@ -1,0 +1,21 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 234, 227);
+    align-items: center;
+    border: 2px solid black;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+input{
+    padding: 6px 17px;
+}

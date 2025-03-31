@@ -5,3 +5,20 @@
     flex-wrap: wrap;
     gap: 25px;
 }
+
+.buttons{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    >.b{
+        border: none;
+        color: black;
+        cursor: pointer;
+        &:hover{
+            background-color: black;
+            color: white;
+            transition: 1.5s;
+        }
+    }
+}

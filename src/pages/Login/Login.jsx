@@ -7,16 +7,13 @@ import { useNavigate } from 'react-router-dom'
 
 
 const Login = () => {
+  
     const dispatch = useDispatch()
-    const navigate = useNavigate()
-    const {userId}= useSelector((state) => state.auth)
 
     const authHendler = ({email,password}) => {
        dispatch(LoginTC(email,password))
-       if (userId) {
-        navigate(`/profilepage/${userId}`);
-      }
-    }
+    }  
+   
 
 
   return (
@@ -34,7 +31,7 @@ const Login = () => {
             <Form>
                 <Field name='email' placeholder='email'/>
                 <Field name='password' placeholder='password' type='password'/>
-                <button type='subpit'>Login</button>
+                <button type='submit'>Login</button>
             </Form>
         </Formik>
     </div>

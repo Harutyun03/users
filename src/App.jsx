@@ -5,9 +5,8 @@ import { getUsersTC } from './store/reduser/reduser'
 import { Route, Routes } from 'react-router-dom'
 import Userpage from './pages/Userpage/Userpage'
 import Layout from './components/Layout/Layout'
-import Login from './pages/Login/Login'
 import Profilepage from './pages/Profilepage/Profilepage'
-
+import Homepage from './components/Homepage/Homepage'
 
 function App() {
   const dispatch = useDispatch()
@@ -21,11 +20,11 @@ function App() {
   return (
     <div className='app'>
       <Routes>
-        <Route path='/' element={<Layout/>}>
-            <Route index element={<Userpage/>}/>
-            <Route path='/login' element={<Login/>}/>
+        
+            <Route path='/' element={<Homepage/>}/>
+            <Route path='/users' element={<Userpage/>}/>
             <Route path='/profilpage/:id' element={<Profilepage/>}/>
-        </Route>
+        
       </Routes>
     </div>
   )

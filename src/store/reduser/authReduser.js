@@ -3,7 +3,8 @@ import { SocialAPI } from "../../api/API"
 const LOGIN = 'login'
 
 const initState = {
-    userId : null
+    userId : null,
+    session : false
 }
 
 const authreduser = (state=initState, action) => {
@@ -11,7 +12,8 @@ const authreduser = (state=initState, action) => {
          case LOGIN: 
              return {
                 ...state,
-                userId : action.payload
+                userId : action.payload,
+                session : true
              }
             default : 
                 return state 

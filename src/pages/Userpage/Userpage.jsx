@@ -34,7 +34,7 @@ const Userpage = () => {
         <div className='buttons'>
         {
           pageArr.map((p)=>{
-            return <button className='b' onClick={() => ChangePage(p)}>{p}</button>
+            return <button className='b' onClick={() => ChangePage(p)} key={p}>{p}</button>
           })
         }
         </div>
